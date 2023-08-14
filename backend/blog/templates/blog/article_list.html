@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article list</title>
+</head>
+<body>
+    {% for article in object_list %}
+
+    
+    <article>
+        <h2>{{article.title}}</h2>
+        <div> {{article.author}} </div>
+        <div> {{article.publish}} </div>
+        <div> {{article.content}} </div>
+        <hr>
+    </article>
+    {% empty %}
+    {% endfor %}
+</body>
+</html>
